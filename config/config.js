@@ -13,17 +13,17 @@
 
 const chatConfig = {
   flowURL:
-    "https://api.zerowidth.ai/v1/process/jEtdtYF8iVXc3BdCVg0b/lD0dqGu2Gz2jNaGRXFVr",
+    "https://api.zerowidth.ai/v1/process/qFqA9s2hBRoabFli3QEn/lWxNqDLQxsQBApVgJJs5",
   header: {
-    title: "Chat with me",
+    title: "Itu Chatbot",
     description:
-      "Mehak is a Product Designer based in San Francisco. She is currently pursuing her Master's in Interaction Design at California College of the Arts. I am an AI assistant built to help you get to know her more.",
+      "Itu Didi is here to help you gain financial independancy",
   },
   suggestedPromptsTitle: "Here are some suggested prompts.",
   suggestedPrompts: [
-    "What accomplishments from her past positions is she most proud of?",
-    "Does she prefer to work within a team? Is she more of a leader or a collaborator?",
-    "Where did she study, and what degree(s) does she hold?",
+    "I want insurance for my kids",
+    "How can I take a loan from the bank to start a business?",
+    "Is there a pension scheme I can look into?",
   ],
   chatInputPlaceholder: "Chat with this agent...",
   maxChatHeight: 400,
