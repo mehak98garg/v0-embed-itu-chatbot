@@ -1,3 +1,4 @@
+Itu Chatbot
 # v0-embed-zerowidth-agent
 
 This repository contains a simple React component that acts as a chat agent. It communicates with a serverless function that proxies requests to the zerowidth API. The project is designed to be deployed on Vercel and easily embedded in a website (for example, in a Google Site via an iframe).
