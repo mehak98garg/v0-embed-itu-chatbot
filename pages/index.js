@@ -334,7 +334,7 @@ export default function AgentComponent() {
         <div
           className="chat-description"
           style={{
-            padding: "20px",
+            padding: "8px 20px",
             borderRadius: "0px",
             fontSize: "12px",
             fontWeight: "normal",
@@ -458,24 +458,25 @@ export default function AgentComponent() {
           />
           <button
             type="submit"
-            aria-label="Send prompt"
-            data-testid="send-button"
-            disabled={isLoading}
-            onMouseOver={() => setIsSubmitHovered(true)}
-            onMouseOut={() => setIsSubmitHovered(false)}
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              borderRadius: "9999px",
-              transition: "opacity 0.2s ease",
-              backgroundColor: isSubmitHovered ? "#007BFF" : "#000",
-              color: isSubmitHovered ? "#fff" : "#fff",
-              height: "36px",
-              width: "36px",
-              border: "5px solid #fff",
-              cursor: isLoading ? "default" : "pointer",
-            }}
+              aria-label="Send prompt"
+                data-testid="send-button"
+                  disabled={isLoading}
+                    onMouseOver={() => setIsSubmitHovered(true)}
+                      onMouseOut={() => setIsSubmitHovered(false)}
+style={{
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    borderRadius: "9999px",
+    transition: "opacity 0.2s ease",
+    backgroundColor: isSubmitHovered ? "#446C44" : "#558E55", // ✅ Match header, darker on hover
+    color: "#fff",
+    padding: "10px",                  // ✅ Increased top/bottom padding
+    height: "40px",                   // ✅ Slightly taller button
+    width: "40px",
+    border: "3px solid #fff",
+    cursor: isLoading ? "default" : "pointer",
+  }}
           >
             {!isLoading ? (
               <svg
