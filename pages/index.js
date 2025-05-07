@@ -291,7 +291,7 @@ export default function AgentComponent() {
   return (
     <div
       style={{
-  backgroundColor: "#f0f0f0",       // Light gray background
+  backgroundColor: "#F8F5E6",       // Light beige background
   width: "100vw",
   maxWidth: "400px",                // Phone width
   height: "95vh",                   // Full height like a phone
@@ -324,6 +324,7 @@ export default function AgentComponent() {
     fontWeight: "bold",
     width: "100%",                 // ensure full width
     boxSizing: "border-box",       // padding won't overflow width
+    margin: "0", // ✅ Add this line
   }}
 >
   {chatConfig.header.title}
@@ -335,6 +336,7 @@ export default function AgentComponent() {
             borderRadius: "0px",
             fontSize: "12px",
             fontWeight: "normal",
+            boxSizing: "border-box", // ✅ Add this line
           }}
         >
           {chatConfig.header.description}
@@ -384,9 +386,9 @@ export default function AgentComponent() {
 >
   <div
     style={{
-      margin: "10px 0 6px 0",     // Neat spacing above and below
-      fontSize: "10px",
-      fontStyle: "italic",
+      margin: "10px 0 8px 0",     // Neat spacing above and below
+      fontSize: "14px",
+      fontStyle: "normal",
     }}
   >
     {chatConfig.suggestedPromptsTitle}
