@@ -318,7 +318,8 @@ export default function AgentComponent() {
     backgroundColor: "#558E55",
     color: "#fff",
     padding: "20px",
-    borderRadius: "10px 10px 0 0", // round only top corners
+    borderTopLeftRadius: "20px",
+    borderTopRightRadius: "20px",
     fontSize: "16px",
     fontWeight: "bold",
     width: "100%",                 // ensure full width
@@ -342,21 +343,20 @@ export default function AgentComponent() {
 
       {/* Chat conversation container displaying messages in bubbles */}
       <div
-        className="chat-container"
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          gap: "5px",
-          marginBottom: "0px",
-          height: chatConfig.maxChatHeight, // Set a fixed height for the chat container
-          overflowY: "auto", // Enable vertical scrolling
-          border: "2px solid #000", // Optional: border around the chat area
-          padding: "0px",
-          borderRadius: "5px 5px 0 0",
-          backgroundColor: "#eee",
-          width: "100%",
-        }}
-      >
+  className="chat-container"
+  style={{
+    display: "flex",
+    flexDirection: "column",
+    gap: "5px",
+    flexGrow: 1,                         // 🟢 Add this line
+    overflowY: "auto",
+    padding: "0px",
+    backgroundColor: "#eee",
+    width: "100%",
+    border: "2px solid #000",
+    borderRadius: "5px 5px 0 0",
+  }}
+>
         {conversation.map((msg, index) => (
           <div
             key={index}
