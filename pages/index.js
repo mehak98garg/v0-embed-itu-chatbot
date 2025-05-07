@@ -313,18 +313,20 @@ export default function AgentComponent() {
         }}
       >
         <div
-          className="chat-title"
-          style={{
-            backgroundColor: "#558E55",
-            color: "#fff",
-            padding: "20px",
-            borderRadius: "0px",
-            fontSize: "16px",
-            fontWeight: "bold",
-          }}
-        >
-          {chatConfig.header.title}
-        </div>
+  className="chat-title"
+  style={{
+    backgroundColor: "#558E55",
+    color: "#fff",
+    padding: "20px",
+    borderRadius: "10px 10px 0 0", // round only top corners
+    fontSize: "16px",
+    fontWeight: "bold",
+    width: "100%",                 // ensure full width
+    boxSizing: "border-box",       // padding won't overflow width
+  }}
+>
+  {chatConfig.header.title}
+</div>
         <div
           className="chat-description"
           style={{
