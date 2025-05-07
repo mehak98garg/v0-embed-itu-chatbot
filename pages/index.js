@@ -233,7 +233,7 @@ export default function AgentComponent() {
   const bubbleStyles = {
     user: {
       alignSelf: "flex-end",
-      backgroundColor: "#DCF8C6",
+      backgroundColor: "#558E55",
       color: "#000",
       padding: "10px",
       borderRadius: "10px 0 0 10px",
