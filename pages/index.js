@@ -233,7 +233,7 @@ export default function AgentComponent() {
   const bubbleStyles = {
   user: {
     alignSelf: "flex-end",
-    backgroundColor: "#C1C0F3",       // light purple
+    backgroundColor: "#D1D1EB",       // light purple
     color: "#000",
     padding: "10px 14px",
     borderRadius: "18px 18px 0 18px", // Rounded shape
@@ -438,7 +438,7 @@ export default function AgentComponent() {
   padding: "12 20px",                 // ✅ Matches header padding
   borderBottomLeftRadius: "20px",    // ✅ Aligns with chatbox
   borderBottomRightRadius: "20px",
-  backgroundColor: "#fff",
+  backgroundColor: "#FFFFFF",
   boxSizing: "border-box",           // ✅ Prevents overflow from padding
 }}
         >
