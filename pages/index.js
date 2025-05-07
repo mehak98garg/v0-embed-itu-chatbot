@@ -347,14 +347,14 @@ export default function AgentComponent() {
   style={{
     display: "flex",
     flexDirection: "column",
-    gap: "5px",
+    gap: "12px",
     flexGrow: 1,                         // 🟢 Add this line
     overflowY: "auto",
     padding: "0px",
     backgroundColor: "#eee",
     width: "100%",
-    border: "2px solid #000",
-    borderRadius: "5px 5px 0 0",
+    border: "2px solid #558E55",
+    borderRadius: "0px 0px 0 0",
   }}
 >
         {conversation.map((msg, index) => (
@@ -380,14 +380,16 @@ export default function AgentComponent() {
         style={{
           display: "flex",
           flexWrap: "wrap",
+          flexDirection: "column",      // 🟢 Ensure items stack vertically
+          padding: "0 20px",            // 🟢 Add horizontal padding
           border: "1px solid #ccc",
           marginBottom: "0px",
         }}
       >
-        <div style={{ margin: "2px", fontSize: "10px", fontStyle: "italic" }}>
+        <div style={{ margin: "20px", fontSize: "10px", fontStyle: "regular" }}>
           {chatConfig.suggestedPromptsTitle}
         </div>
-        <div style={{ display: "flex", flexWrap: "wrap", gap: "2px" }}>
+        <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
           {chatConfig.suggestedPrompts.map((prompt, index) => (
             <button
               key={index}
@@ -399,7 +401,7 @@ export default function AgentComponent() {
                 padding: "2px 4px",
                 borderRadius: "5px",
                 border: "1px solid #ccc",
-                margin: "2px",
+                margin: "8px",
                 backgroundColor: hoveredIndex === index ? "#ddd" : "#f4f4f4",
                 color: hoveredIndex === index ? "#000" : "#888",
                 fontSize: "12px",
