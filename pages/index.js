@@ -435,7 +435,7 @@ export default function AgentComponent() {
   display: "flex",
   alignItems: "center",
   width: "100%",
-  padding: "0 20px",                 // ✅ Matches header padding
+  padding: "12 20px",                 // ✅ Matches header padding
   borderBottomLeftRadius: "20px",    // ✅ Aligns with chatbox
   borderBottomRightRadius: "20px",
   backgroundColor: "#fff",
