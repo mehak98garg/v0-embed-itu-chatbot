@@ -376,43 +376,53 @@ export default function AgentComponent() {
       </div>
 
       {/* Suggested Prompts Section */}
-      <div
+     <div
+  style={{
+    padding: "0 20px",           // Aligns with top section
+    marginBottom: "10px",
+  }}
+>
+  <div
+    style={{
+      margin: "10px 0 6px 0",     // Neat spacing above and below
+      fontSize: "10px",
+      fontStyle: "italic",
+    }}
+  >
+    {chatConfig.suggestedPromptsTitle}
+  </div>
+
+  <div
+    style={{
+      display: "flex",
+      flexWrap: "wrap",
+      gap: "6px",
+      rowGap: "6px",
+    }}
+  >
+    {chatConfig.suggestedPrompts.map((prompt, index) => (
+      <button
+        key={index}
+        onClick={() => handlePromptClick(prompt)}
+        onMouseOver={() => handlePromptMouseOver(index)}
+        onMouseOut={handlePromptMouseOut}
+        disabled={isLoading}
         style={{
-          display: "flex",
-          flexWrap: "wrap",
-          flexDirection: "column",      // 🟢 Ensure items stack vertically
-          padding: "0 20px",            // 🟢 Add horizontal padding
+          padding: "6px 10px",
+          borderRadius: "5px",
           border: "1px solid #ccc",
-          marginBottom: "0px",
+          backgroundColor: hoveredIndex === index ? "#ddd" : "#f4f4f4",
+          color: hoveredIndex === index ? "#000" : "#888",
+          fontSize: "12px",
+          cursor: "pointer",
         }}
       >
-        <div style={{ margin: "20px", fontSize: "10px", fontStyle: "regular" }}>
-          {chatConfig.suggestedPromptsTitle}
-        </div>
-        <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
-          {chatConfig.suggestedPrompts.map((prompt, index) => (
-            <button
-              key={index}
-              onClick={() => handlePromptClick(prompt)}
-              onMouseOver={() => handlePromptMouseOver(index)}
-              onMouseOut={handlePromptMouseOut}
-              disabled={isLoading}
-              style={{
-                padding: "2px 4px",
-                borderRadius: "5px",
-                border: "1px solid #ccc",
-                margin: "8px",
-                backgroundColor: hoveredIndex === index ? "#ddd" : "#f4f4f4",
-                color: hoveredIndex === index ? "#000" : "#888",
-                fontSize: "12px",
-                cursor: "pointer",
-              }}
-            >
-              {prompt}
-            </button>
-          ))}
-        </div>
-      </div>
+        {prompt}
+      </button>
+    ))}
+  </div>
+</div>
+
 
       {/* Chat input form for the user to send messages */}
       <form onSubmit={handleSubmit} style={{ display: "flex", gap: "0px" }}>
