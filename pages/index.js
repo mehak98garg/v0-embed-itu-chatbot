@@ -310,6 +310,8 @@ export default function AgentComponent() {
         style={{
           marginBottom: "0px",
           userSelect: "none",
+          boxSizing: "border-box", // ✅ Add this to contain padding/margin
+          padding: 0                // ✅ Ensures edge alignment
         }}
       >
         <div
@@ -353,7 +355,7 @@ export default function AgentComponent() {
     flexGrow: 1,                         // 🟢 Add this line
     overflowY: "auto",
     padding: "0px",
-    backgroundColor: "#eee",
+    backgroundColor: "#fff",
     width: "100%",
     border: "2px solid #558E55",
     borderRadius: "0px 0px 0 0",
@@ -430,17 +432,15 @@ export default function AgentComponent() {
       <form onSubmit={handleSubmit} style={{ display: "flex", gap: "0px" }}>
         <div
           style={{
-            display: "flex",
-            alignItems: "center",
-            gap: 0,
-            width: "100%",
-            borderBottom: "1px solid #ccc",
-            borderLeft: "1px solid #ccc",
-            borderRight: "1px solid #ccc",
-            borderRadius: "0 0 5px 5px",
-            overflow: "hidden",
-            backgroundColor: "#fff",
-          }}
+  display: "flex",
+  alignItems: "center",
+  width: "100%",
+  padding: "0 20px",                 // ✅ Matches header padding
+  borderBottomLeftRadius: "20px",    // ✅ Aligns with chatbox
+  borderBottomRightRadius: "20px",
+  backgroundColor: "#fff",
+  boxSizing: "border-box",           // ✅ Prevents overflow from padding
+}}
         >
           <input
             type="text"
