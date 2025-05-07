@@ -315,10 +315,10 @@ export default function AgentComponent() {
         <div
           className="chat-title"
           style={{
-            backgroundColor: "#000",
+            backgroundColor: "#558E55",
             color: "#fff",
-            padding: "10px",
-            borderRadius: "5px",
+            padding: "20px",
+            borderRadius: "0px",
             fontSize: "16px",
             fontWeight: "bold",
           }}
@@ -328,8 +328,8 @@ export default function AgentComponent() {
         <div
           className="chat-description"
           style={{
-            padding: "10px",
-            borderRadius: "5px",
+            padding: "20px",
+            borderRadius: "0px",
             fontSize: "12px",
             fontWeight: "normal",
           }}
