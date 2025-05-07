@@ -251,6 +251,9 @@ export default function AgentComponent() {
     maxWidth: "75%",
     fontSize: "14px",
     border: "1px solid #ddd"
+    overflowWrap: "break-word",   // ✅ Add this
+    wordBreak: "break-word",      // ✅ Add this
+    whiteSpace: "pre-wrap",       // ✅ Optional: keeps line breaks
   }
 };
 
