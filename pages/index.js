@@ -231,29 +231,28 @@ export default function AgentComponent() {
    * @property {Object} agent - Styles for agent messages (left-aligned, light gray background).
    */
   const bubbleStyles = {
-    user: {
-      alignSelf: "flex-end",
-      backgroundColor: "#558E55",
-      color: "#000",
-      padding: "10px",
-      borderRadius: "10px 0 0 10px",
-      borderRight: "5px solid #8EDB5A",
-      margin: "0",
-      maxWidth: "80%",
-      fontSize: "12px",
-    },
-    agent: {
-      alignSelf: "flex-start",
-      backgroundColor: "#fff",
-      color: "#000",
-      padding: "10px",
-      borderRadius: "0 10px 10px 0",
-      borderLeft: "5px solid #aaf",
-      margin: "0",
-      maxWidth: "80%",
-      fontSize: "12px",
-    },
-  };
+  user: {
+    alignSelf: "flex-end",
+    backgroundColor: "#dcf8c6",       // WhatsApp light green
+    color: "#000",
+    padding: "10px 14px",
+    borderRadius: "18px 18px 0 18px", // Rounded shape
+    margin: "4px 8px",
+    maxWidth: "75%",
+    fontSize: "14px",
+  },
+  agent: {
+    alignSelf: "flex-start",
+    backgroundColor: "#fff",          // White bubble
+    color: "#000",
+    padding: "10px 14px",
+    borderRadius: "18px 18px 18px 0",
+    margin: "4px 8px",
+    maxWidth: "75%",
+    fontSize: "14px",
+    border: "1px solid #ddd"
+  }
+};
 
   /**
    * Handles the click event on a suggested prompt.
