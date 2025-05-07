@@ -334,7 +334,7 @@ export default function AgentComponent() {
         <div
           className="chat-description"
           style={{
-            padding: "8px 20px",
+            padding: "12px 20px",
             borderRadius: "0px",
             fontSize: "12px",
             fontWeight: "normal",
@@ -450,10 +450,11 @@ export default function AgentComponent() {
             onChange={(e) => setMessage(e.target.value)}
             style={{
               flexGrow: 1,
-              padding: "10px",
+              padding: "18px 20px",
               border: "none",
               outline: "none",
               backgroundColor: "#fff",
+              color: "#000",                // ⬅️ Add this line
             }}
           />
           <button
