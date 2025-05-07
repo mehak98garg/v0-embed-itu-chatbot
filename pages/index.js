@@ -233,7 +233,7 @@ export default function AgentComponent() {
   const bubbleStyles = {
   user: {
     alignSelf: "flex-end",
-    backgroundColor: "#dcf8c6",       // WhatsApp light green
+    backgroundColor: "#C1C0F3",       // light purple
     color: "#000",
     padding: "10px 14px",
     borderRadius: "18px 18px 0 18px", // Rounded shape
@@ -243,7 +243,7 @@ export default function AgentComponent() {
   },
   agent: {
     alignSelf: "flex-start",
-    backgroundColor: "#fff",          // White bubble
+    backgroundColor: "#C3EBDA",          // green bubble
     color: "#000",
     padding: "10px 14px",
     borderRadius: "18px 18px 18px 0",
