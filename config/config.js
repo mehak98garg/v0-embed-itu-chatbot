@@ -13,19 +13,19 @@
 
 const chatConfig = {
   flowURL:
-    "https://api.zerowidth.ai/v1/process/qFqA9s2hBRoabFli3QEn/lWxNqDLQxsQBApVgJJs5",
+    "https://api.zerowidth.ai/v1/process/qFqA9s2hBRoabFli3QEn/lqtUXWMQlCFC1BaPWZK4",
   header: {
     title: "Itu Chatbot",
     description:
-      "Itu Didi is here to help you gain financial independancy",
+      "Itu Didi is here to help you gain financial independence",
   },
   suggestedPromptsTitle: "Here are some suggested prompts.",
   suggestedPrompts: [
-    "I want insurance for my kids",
-    "How can I take a loan from the bank to start a business?",
-    "Is there a pension scheme I can look into?",
+    "How can I save money for my children's education?",
+    "How can I get money to start my tailoring business?",
+    "I want to know about getting a loan",
   ],
-  chatInputPlaceholder: "Chat with this agent...",
+  chatInputPlaceholder: "Chat with this agent..",
   maxChatHeight: 400,
 };
 
